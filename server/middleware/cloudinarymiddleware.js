@@ -4,7 +4,7 @@ import { v2 as cloudinary } from 'cloudinary';
 
     // Configuration
     cloudinary.config({ 
-        cloud_name: 'dgdlnlpc3', 
+        cloud_name: process.env.CLOUDINARY_CLOUD_NAME || "dgdlnlpc3", 
         api_key: process.env.CLOUDINARY_API_KEY, 
         api_secret: process.env.CLOUDINARY_API_SECRET
     })
